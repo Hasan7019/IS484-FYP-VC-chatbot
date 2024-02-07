@@ -7,7 +7,7 @@ import Link from "next/link";
 const ServicesButton = ({ item }) => {
   return (
     // currently, link will lead to log-in page
-    <Link href="/newChat" className="w-full h-full">
+    <Link href="/" className="w-full h-full">
       {item}
     </Link>
   );
