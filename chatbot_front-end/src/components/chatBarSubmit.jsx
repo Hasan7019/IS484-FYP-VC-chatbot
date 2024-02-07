@@ -4,13 +4,17 @@ import Link from "next/link";
 // functional component for buttons in the services page.
 // it is called separately for each button and accepts
 // item name as props
-const ServicesButton = ({ item }) => {
+const ChatBarSubmitButton = ({ item }) => {
   return (
     // currently, link will lead to log-in page
-    <Link href="/newChat" className="w-full h-full">
-      {item}
-    </Link>
+    <>
+    <button><Link href="/newChat" className="w-full h-full border">
+      Let's go
+    </Link></button>
+    </>
+    
+    
   );
 };
 
-export default ServicesButton;
+export default ChatBarSubmitButton;
